@@ -17,6 +17,7 @@ package com.vaadin.addon.leaflet4vaadin.types;
 import static java.lang.Math.max;
 import static java.lang.Math.min;
 
+import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
 import org.apache.commons.lang3.builder.ReflectionToStringBuilder;
 
 import com.fasterxml.jackson.annotation.JsonIgnore;
@@ -29,6 +30,7 @@ import com.fasterxml.jackson.annotation.JsonIgnore;
  * @since 2020-03-21
  * @version 1.0
  */
+@JsonIgnoreProperties(ignoreUnknown = true)
 public class Bounds implements BasicType {
     private static final long serialVersionUID = 181166727523469617L;
     private Point max = new Point();

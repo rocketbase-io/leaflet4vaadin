@@ -14,6 +14,8 @@
 
 package com.vaadin.addon.leaflet4vaadin.types;
 
+import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
+
 /**
  * Represents a point with x and y coordinates in pixels.
  * 
@@ -22,6 +24,7 @@ package com.vaadin.addon.leaflet4vaadin.types;
  * @since 2020-03-07
  * @version 1.0
  */
+@JsonIgnoreProperties(ignoreUnknown = true)
 public class Point implements BasicType {
 
 	private static final long serialVersionUID = -4978055088391693282L;

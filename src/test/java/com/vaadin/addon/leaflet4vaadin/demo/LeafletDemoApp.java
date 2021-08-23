@@ -159,7 +159,6 @@ public class LeafletDemoApp extends AppLayout implements AfterNavigationObserver
 		// Plugins examples
 		AppMenuItem.create("Plugins", new Icon(VaadinIcon.PLUG)).addSubMenu(FullScreenPluginExample.class)
 		        .addSubMenu(HeatmapPluginExample.class)
-		        .addSubMenu(MarkerClusterPluginExample.class)
 		        .addSubMenu(CanvasIconLayerExample.class, NEW)
                 .addSubMenu(KmzLayerPluginExample.class, NEW)
 				.addTo(appMenu);

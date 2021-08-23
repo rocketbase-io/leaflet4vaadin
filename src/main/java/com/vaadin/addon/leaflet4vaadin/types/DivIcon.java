@@ -1,5 +1,7 @@
 package com.vaadin.addon.leaflet4vaadin.types;
 
+import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
+
 /**
  * Represents a lightweight icon for markers that uses a simple element
  * instead of an image. Inherits from Icon but ignores the iconUrl and shadow
@@ -24,6 +26,7 @@ package com.vaadin.addon.leaflet4vaadin.types;
  * @since 2020-05-29
  * @version 1.0
  */
+@JsonIgnoreProperties(ignoreUnknown = true)
 public class DivIcon extends Icon {
 
     private static final long serialVersionUID = 5260221030669197125L;

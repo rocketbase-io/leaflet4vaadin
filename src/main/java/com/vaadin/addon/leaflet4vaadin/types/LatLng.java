@@ -14,6 +14,8 @@
 
 package com.vaadin.addon.leaflet4vaadin.types;
 
+import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
+
 /**
  * Represents a geographical point with a certain latitude and longitude.
  * 
@@ -23,6 +25,7 @@ package com.vaadin.addon.leaflet4vaadin.types;
  * @since 2020-03-21
  * @version 1.0
  */
+@JsonIgnoreProperties(ignoreUnknown = true)
 public class LatLng implements BasicType {
     private static final long serialVersionUID = 8519525431224154852L;
     private double lng;

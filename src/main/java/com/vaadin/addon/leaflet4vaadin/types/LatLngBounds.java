@@ -17,6 +17,7 @@ package com.vaadin.addon.leaflet4vaadin.types;
 import java.util.Arrays;
 import java.util.List;
 
+import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
 import org.apache.commons.lang3.builder.ToStringBuilder;
 
 import com.fasterxml.jackson.annotation.JsonIgnore;
@@ -30,6 +31,7 @@ import com.fasterxml.jackson.annotation.JsonProperty;
  * @since 2020-03-21
  * @version 1.0
  */
+@JsonIgnoreProperties(ignoreUnknown = true)
 public class LatLngBounds implements BasicType {
     private static final long serialVersionUID = -7421430446913242834L;
 
